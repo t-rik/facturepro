@@ -1,0 +1,272 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.pfa:facturation:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.projectlombok:lombok:jar -> version (?) vs 1.18.42 @ line 62, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------< com.pfa:facturation >-------------------------
+[INFO] Building facturation-backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.1:run (default-cli) > test-compile @ facturation >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ facturation ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ facturation ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ facturation ---
+[INFO] skip non existing resourceDirectory C:\Users\IdeaPad Slim 5\Desktop\pfa\backend-facturation\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ facturation ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:4.0.1:run (default-cli) < test-compile @ facturation <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.1:run (default-cli) @ facturation ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-01-02T12:54:04.395+01:00  INFO 4008 --- [facturation-backend] [           main] c.p.f.FacturationBackendApplication      : Starting FacturationBackendApplication using Java 21.0.9 with PID 4008 (C:\Users\IdeaPad Slim 5\Desktop\pfa\backend-facturation\target\classes started by Sayt in C:\Users\IdeaPad Slim 5\Desktop\pfa\backend-facturation)
+2026-01-02T12:54:04.397+01:00  INFO 4008 --- [facturation-backend] [           main] c.p.f.FacturationBackendApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-01-02T12:54:04.798+01:00  INFO 4008 --- [facturation-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-02T12:54:04.837+01:00  INFO 4008 --- [facturation-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2026-01-02T12:54:05.166+01:00  INFO 4008 --- [facturation-backend] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-01-02T12:54:05.176+01:00  INFO 4008 --- [facturation-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-02T12:54:05.176+01:00  INFO 4008 --- [facturation-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-02T12:54:05.219+01:00  INFO 4008 --- [facturation-backend] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 788 ms
+2026-01-02T12:54:05.326+01:00  INFO 4008 --- [facturation-backend] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-02T12:54:05.361+01:00  INFO 4008 --- [facturation-backend] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-02T12:54:05.655+01:00  INFO 4008 --- [facturation-backend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-02T12:54:05.676+01:00  INFO 4008 --- [facturation-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-02T12:54:05.891+01:00  INFO 4008 --- [facturation-backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@141b011a
+2026-01-02T12:54:05.892+01:00  INFO 4008 --- [facturation-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-02T12:54:05.930+01:00  WARN 4008 --- [facturation-backend] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-02T12:54:05.941+01:00  INFO 4008 --- [facturation-backend] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/facturation_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.6
+	Default catalog/schema: facturation_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-02T12:54:06.531+01:00  INFO 4008 --- [facturation-backend] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-02T12:54:06.579+01:00  INFO 4008 --- [facturation-backend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-02T12:54:06.632+01:00  INFO 4008 --- [facturation-backend] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-02T12:54:06.711+01:00  WARN 4008 --- [facturation-backend] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-02T12:54:06.917+01:00  INFO 4008 --- [facturation-backend] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-01-02T12:54:06.921+01:00  INFO 4008 --- [facturation-backend] [           main] c.p.f.FacturationBackendApplication      : Started FacturationBackendApplication in 2.826 seconds (process running for 3.093)
+2026-01-02T12:54:20.604+01:00  INFO 4008 --- [facturation-backend] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-02T12:54:20.605+01:00  INFO 4008 --- [facturation-backend] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-02T12:54:20.606+01:00  INFO 4008 --- [facturation-backend] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: select f1_0.id,f1_0.client_id,f1_0.date_facture,f1_0.montant_total from facture f1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select f1_0.id,c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone,f1_0.date_facture,f1_0.montant_total from facture f1_0 left join client c1_0 on c1_0.id=f1_0.client_id where f1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: delete from facture_lignes where facture_id=?
+Hibernate: delete from ligne_facture where id=?
+Hibernate: delete from ligne_facture where id=?
+Hibernate: delete from facture where id=?
+Hibernate: select f1_0.id,f1_0.client_id,f1_0.date_facture,f1_0.montant_total from facture f1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select f1_0.id,f1_0.client_id,f1_0.date_facture,f1_0.montant_total from facture f1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: insert into client (email,nom,telephone) values (?,?,?)
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: delete from client where id=?
+2026-01-02T12:55:44.431+01:00  WARN 4008 --- [facturation-backend] [io-8081-exec-10] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 1451, SQLState: 23000
+2026-01-02T12:55:44.432+01:00  WARN 4008 --- [facturation-backend] [io-8081-exec-10] org.hibernate.orm.jdbc.error             : Cannot delete or update a parent row: a foreign key constraint fails (`facturation_db`.`facture`, CONSTRAINT `FKkimq62662qs9wrpfvsw8mcnvf` FOREIGN KEY (`client_id`) REFERENCES `client` (`id`))
+2026-01-02T12:55:44.460+01:00 ERROR 4008 --- [facturation-backend] [io-8081-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Cannot delete or update a parent row: a foreign key constraint fails (`facturation_db`.`facture`, CONSTRAINT `FKkimq62662qs9wrpfvsw8mcnvf` FOREIGN KEY (`client_id`) REFERENCES `client` (`id`))] [delete from client where id=?]; SQL [delete from client where id=?]; constraint [FKkimq62662qs9wrpfvsw8mcnvf]] with root cause
+
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`facturation_db`.`facture`, CONSTRAINT `FKkimq62662qs9wrpfvsw8mcnvf` FOREIGN KEY (`client_id`) REFERENCES `client` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:181) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:145) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:53) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:66) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.persister.entity.mutation.AbstractDeleteCoordinator.doStaticDelete(AbstractDeleteCoordinator.java:268) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.persister.entity.mutation.AbstractDeleteCoordinator.delete(AbstractDeleteCoordinator.java:79) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:119) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:634) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:505) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:381) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.internal.SessionImpl.fireFlush(SessionImpl.java:1489) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:481) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2116) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2038) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:410) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:166) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commitNoRollbackOnly(JdbcResourceLocalTransactionCoordinatorImpl.java:248) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:242) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:89) ~[hibernate-core-7.2.0.Final.jar:7.2.0.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:553) ~[spring-orm-7.0.2.jar:7.0.2]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794) ~[spring-tx-7.0.2.jar:7.0.2]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-7.0.2.jar:7.0.2]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:684) ~[spring-tx-7.0.2.jar:7.0.2]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:406) ~[spring-tx-7.0.2.jar:7.0.2]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166) ~[spring-data-jpa-4.0.1.jar:4.0.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222) ~[spring-aop-7.0.2.jar:7.0.2]
+	at jdk.proxy2/jdk.proxy2.$Proxy126.deleteById(Unknown Source) ~[na:na]
+	at com.pfa.facturation.service.ClientService.deleteClient(ClientService.java:30) ~[classes/:na]
+	at com.pfa.facturation.controller.ClientController.deleteClient(ClientController.java:49) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:925) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:651) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: delete from client where id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select f1_0.id,f1_0.client_id,f1_0.date_facture,f1_0.montant_total from facture f1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select f1_0.id,c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone,f1_0.date_facture,f1_0.montant_total from facture f1_0 left join client c1_0 on c1_0.id=f1_0.client_id where f1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: delete from facture_lignes where facture_id=?
+Hibernate: delete from ligne_facture where id=?
+Hibernate: delete from facture where id=?
+Hibernate: select f1_0.id,f1_0.client_id,f1_0.date_facture,f1_0.montant_total from facture f1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select f1_0.id,f1_0.client_id,f1_0.date_facture,f1_0.montant_total from facture f1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select f1_0.id,f1_0.client_id,f1_0.date_facture,f1_0.montant_total from facture f1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select f1_0.id,f1_0.client_id,f1_0.date_facture,f1_0.montant_total from facture f1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select f1_0.id,f1_0.client_id,f1_0.date_facture,f1_0.montant_total from facture f1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: delete from client where id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select f1_0.id,f1_0.client_id,f1_0.date_facture,f1_0.montant_total from facture f1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select f1_0.id,f1_0.client_id,f1_0.date_facture,f1_0.montant_total from facture f1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select f1_0.id,f1_0.client_id,f1_0.date_facture,f1_0.montant_total from facture f1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select f1_0.id,f1_0.client_id,f1_0.date_facture,f1_0.montant_total from facture f1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0
+Hibernate: select c1_0.id,c1_0.email,c1_0.nom,c1_0.telephone from client c1_0 where c1_0.id=?
+Hibernate: select l1_0.facture_id,l1_1.id,l1_1.designation,l1_1.prix_unitaire,l1_1.quantite from facture_lignes l1_0 join ligne_facture l1_1 on l1_1.id=l1_0.lignes_id where l1_0.facture_id=?
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  51:56 min
+[INFO] Finished at: 2026-01-02T13:45:59+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.1:run (default-cli) on project facturation: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

@@ -12,8 +12,12 @@ public class Facture {
     private Long id;
     private Date dateFacture = new Date();
     private Double montantTotal;
+    private Double paidAmount = 0.0;
 
-    @ManyToOne(cascade = CascadeType.PERSIST) // Bach ytcrea client automatiqement
+    @Enumerated(EnumType.STRING)
+    private FactureStatus status = FactureStatus.DRAFT;
+
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Client client;
 
     @OneToMany(cascade = CascadeType.ALL)
