@@ -28,6 +28,9 @@ public class User {
     @Size(min = 6)
     private String password;
 
+    @Column(nullable = false)
+    private boolean emailVerified = false;
+
     @Enumerated(EnumType.STRING)
     private Role role = Role.USER;
 }
