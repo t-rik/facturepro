@@ -10,4 +10,4 @@ FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-Xmx140m", "-Xss512k", "-XX:ReservedCodeCacheSize=60M", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-Xmx1024m", "-Xms512m", "-jar", "app.jar"]
