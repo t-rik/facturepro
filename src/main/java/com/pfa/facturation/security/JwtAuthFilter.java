@@ -30,22 +30,29 @@ public class JwtAuthFilter extends OncePerRequestFilter {
             throws ServletException, IOException {
         
         String authHeader = request.getHeader("Authorization");
+        String token = null;
         
+        // Check Authorization header first
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
-            String token = authHeader.substring(7);
+            token = authHeader.substring(7);
+        }
+        
+        // Fallback to query parameter (for PDF downloads from mobile app)
+        if (token == null) {
+            token = request.getParameter("token");
+        }
+        
+        if (token != null && jwtUtil.validateToken(token)) {
+            String username = jwtUtil.extractUsername(token);
+            User user = userRepository.findByUsername(username).orElse(null);
             
-            if (jwtUtil.validateToken(token)) {
-                String username = jwtUtil.extractUsername(token);
-                User user = userRepository.findByUsername(username).orElse(null);
-                
-                if (user != null) {
-                    UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(
-                            user.getUsername(),
-                            null,
-                            Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + user.getRole().name()))
-                    );
-                    SecurityContextHolder.getContext().setAuthentication(auth);
-                }
+            if (user != null) {
+                UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(
+                        user.getUsername(),
+                        null,
+                        Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + user.getRole().name()))
+                );
+                SecurityContextHolder.getContext().setAuthentication(auth);
             }
         }
         
