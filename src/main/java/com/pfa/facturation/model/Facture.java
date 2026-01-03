@@ -17,9 +17,9 @@ public class Facture {
     @Enumerated(EnumType.STRING)
     private FactureStatus status = FactureStatus.DRAFT;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     private Client client;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<LigneFacture> lignes;
 }
